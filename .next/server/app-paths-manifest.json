@@ -1,7 +1,0 @@
-{
-  "/services/electrician-marketing/page": "app/services/electrician-marketing/page.js",
-  "/services/cleaning-companies-marketing/page": "app/services/cleaning-companies-marketing/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/services/construction-marketing/page": "app/services/construction-marketing/page.js",
-  "/page": "app/page.js"
-}
