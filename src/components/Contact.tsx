@@ -1,9 +1,55 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import * as gtag from '../lib/gtag';
 
 const Contact = () => {
+  // Formspree hook with your form ID
+  const [state, handleSubmit] = useForm("xpwrdpvv");
+  
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const onSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Track form submission with Google Analytics
+    gtag.trackContactForm();
+    
+    // Create FormData object for Formspree
+    const formDataToSubmit = new FormData();
+    formDataToSubmit.append('name', formData.name);
+    formDataToSubmit.append('email', formData.email);
+    formDataToSubmit.append('phone', formData.phone);
+    formDataToSubmit.append('message', formData.message);
+    formDataToSubmit.append('_subject', `SEO Inquiry from ${formData.name}`);
+    
+    // Submit to Formspree
+    await handleSubmit(formDataToSubmit);
+    
+    // Reset form if submission was successful
+    if (state.succeeded) {
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+      });
+    }
+  };
+
   return (
     <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -110,7 +156,36 @@ const Contact = () => {
 
           <div className="bg-white rounded-lg p-6 sm:p-8">
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">Ready to Get Started?</h3>
-            <form className="space-y-4 sm:space-y-6">
+            
+            {state.succeeded && (
+              <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-md">
+                <div className="flex">
+                  <div className="text-green-400 text-xl mr-3">✅</div>
+                  <div>
+                    <h4 className="text-green-800 font-semibold">Message Sent Successfully!</h4>
+                    <p className="text-green-700 text-sm mt-1">
+                      Thank you for your inquiry. I'll get back to you within 24 hours to discuss your SEO strategy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
+            
+            {state.errors && Object.keys(state.errors).length > 0 && (
+              <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-md">
+                <div className="flex">
+                  <div className="text-red-400 text-xl mr-3">❌</div>
+                  <div>
+                    <h4 className="text-red-800 font-semibold">Submission Error</h4>
+                    <p className="text-red-700 text-sm mt-1">
+                      There was an error sending your message. Please try again or contact me directly.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
+            
+            <form onSubmit={onSubmit} className="space-y-4 sm:space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                   Full Name
@@ -119,6 +194,9 @@ const Contact = () => {
                   type="text"
                   id="name"
                   name="name"
+                  required
+                  value={formData.name}
+                  onChange={handleChange}
                   className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 text-sm sm:text-base"
                   placeholder="Your full name"
                 />
@@ -132,6 +210,9 @@ const Contact = () => {
                   type="email"
                   id="email"
                   name="email"
+                  required
+                  value={formData.email}
+                  onChange={handleChange}
                   className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 text-sm sm:text-base"
                   placeholder="your@email.com"
                 />
@@ -145,6 +226,8 @@ const Contact = () => {
                   type="tel"
                   id="phone"
                   name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
                   className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 text-sm sm:text-base"
                   placeholder="(323) 555-0123"
                 />
@@ -158,30 +241,34 @@ const Contact = () => {
                   id="message"
                   name="message"
                   rows={4}
+                  required
+                  value={formData.message}
+                  onChange={handleChange}
                   className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500 text-sm sm:text-base"
                   placeholder="Tell me about your SEO goals and current challenges..."
                 ></textarea>
               </div>
               
               <button
-                type="button"
-                onClick={() => {
-                  const name = (document.getElementById('name') as HTMLInputElement)?.value || '';
-                  const email = (document.getElementById('email') as HTMLInputElement)?.value || '';
-                  const phone = (document.getElementById('phone') as HTMLInputElement)?.value || '';
-                  const message = (document.getElementById('message') as HTMLTextAreaElement)?.value || '';
-                  
-                  // Track form submission
-                  gtag.trackContactForm();
-                  
-                  const subject = `SEO Inquiry from ${name}`;
-                  const body = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nProject Details:\n${message}`;
-                  
-                  window.location.href = `mailto:paul@paulsilvamarketing.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-                }}
-                className="w-full bg-blue-600 text-white px-6 py-3 rounded-md text-base sm:text-lg font-semibold hover:bg-blue-700 transition-colors"
+                type="submit"
+                disabled={state.submitting}
+                className={`w-full px-6 py-3 rounded-md text-base sm:text-lg font-semibold transition-colors ${
+                  state.submitting 
+                    ? 'bg-gray-400 text-gray-700 cursor-not-allowed' 
+                    : 'bg-blue-600 text-white hover:bg-blue-700'
+                }`}
               >
-                Send Message
+                {state.submitting ? (
+                  <span className="flex items-center justify-center">
+                    <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Sending...
+                  </span>
+                ) : (
+                  'Send Message'
+                )}
               </button>
             </form>
           </div>
