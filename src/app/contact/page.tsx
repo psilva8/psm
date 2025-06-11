@@ -1,9 +1,14 @@
 'use client';
 
 import React, { useState } from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import Navigation from '@/components/Navigation';
+import * as gtag from '../../lib/gtag';
 
 export default function Contact() {
+  // Formspree hook - Replace 'YOUR_FORM_ID' with your actual Formspree form ID
+  const [state, handleSubmit] = useForm("xdkogkqg"); // Temporary ID - you'll need to replace this
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -20,23 +25,36 @@ export default function Contact() {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    const subject = `Marketing Consultation Request from ${formData.name}`;
-    const body = `
-Name: ${formData.name}
-Email: ${formData.email}
-Phone: ${formData.phone}
-Company: ${formData.company}
-Service Type: ${formData.service}
-
-Message:
-${formData.message}
-    `;
+    // Track form submission with Google Analytics
+    gtag.trackContactForm();
     
-    const mailtoLink = `mailto:paul@paulsilvamarketing.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoLink;
+    // Create FormData object for Formspree
+    const formDataToSubmit = new FormData();
+    formDataToSubmit.append('name', formData.name);
+    formDataToSubmit.append('email', formData.email);
+    formDataToSubmit.append('phone', formData.phone);
+    formDataToSubmit.append('company', formData.company);
+    formDataToSubmit.append('service', formData.service);
+    formDataToSubmit.append('message', formData.message);
+    formDataToSubmit.append('_subject', `Marketing Consultation Request from ${formData.name}`);
+    
+    // Submit to Formspree
+    await handleSubmit(formDataToSubmit);
+    
+    // Reset form if submission was successful
+    if (state.succeeded) {
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        service: '',
+        message: ''
+      });
+    }
   };
 
   return (
@@ -76,7 +94,35 @@ ${formData.message}
                 Fill out the form below and I'll get back to you within 24 hours to discuss your marketing goals and how we can help achieve them.
               </p>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
+              {state.succeeded && (
+                <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-md">
+                  <div className="flex">
+                    <div className="text-green-400 text-xl mr-3">✅</div>
+                    <div>
+                      <h3 className="text-green-800 font-semibold">Message Sent Successfully!</h3>
+                      <p className="text-green-700 text-sm mt-1">
+                        Thank you for your inquiry. I'll get back to you within 24 hours to discuss your marketing goals.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              )}
+              
+              {state.errors && Object.keys(state.errors).length > 0 && (
+                <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-md">
+                  <div className="flex">
+                    <div className="text-red-400 text-xl mr-3">❌</div>
+                    <div>
+                      <h3 className="text-red-800 font-semibold">Submission Error</h3>
+                      <p className="text-red-700 text-sm mt-1">
+                        There was an error sending your message. Please try again or contact me directly.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              )}
+              
+              <form onSubmit={onSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
@@ -182,10 +228,38 @@ ${formData.message}
 
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition-colors font-semibold text-lg"
+                  disabled={state.submitting}
+                  className={`w-full py-3 px-6 rounded-md transition-colors font-semibold text-lg ${
+                    state.submitting 
+                      ? 'bg-gray-400 text-gray-700 cursor-not-allowed' 
+                      : 'bg-blue-600 text-white hover:bg-blue-700'
+                  }`}
                 >
-                  Send Message
+                  {state.submitting ? (
+                    <span className="flex items-center justify-center">
+                      <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      </svg>
+                      Sending Message...
+                    </span>
+                  ) : (
+                    'Send Message'
+                  )}
                 </button>
+                
+                <ValidationError 
+                  prefix="Email" 
+                  field="email"
+                  errors={state.errors}
+                  className="text-red-600 text-sm mt-1"
+                />
+                <ValidationError 
+                  prefix="Message" 
+                  field="message"
+                  errors={state.errors}
+                  className="text-red-600 text-sm mt-1"
+                />
               </form>
             </div>
 
