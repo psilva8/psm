@@ -8,6 +8,7 @@ import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import FreeConsultation from '@/components/FreeConsultation';
 
 // Value Proposition Component
 const ValueProposition = () => {
@@ -65,6 +66,7 @@ export default function Home() {
       <Navigation />
       <Hero />
       <ValueProposition />
+      <FreeConsultation />
       <Services />
       <About />
       <Portfolio />
