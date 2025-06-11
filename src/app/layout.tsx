@@ -68,14 +68,14 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2VNFLK6KFL"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'GA_MEASUREMENT_ID', {
+              gtag('config', 'G-2VNFLK6KFL', {
                 page_title: document.title,
                 page_location: window.location.href,
                 send_page_view: true
