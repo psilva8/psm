@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import * as gtag from '../lib/gtag';
 
 const Contact = () => {
   return (
@@ -32,6 +33,7 @@ const Contact = () => {
                   <div className="text-base sm:text-lg font-semibold text-white">Phone</div>
                   <a 
                     href="tel:3235221424" 
+                    onClick={() => gtag.trackPhoneCall()}
                     className="text-blue-400 text-lg sm:text-xl font-bold hover:text-blue-300 transition-colors"
                   >
                     (323) 522-1424
@@ -51,6 +53,7 @@ const Contact = () => {
                   <div className="text-base sm:text-lg font-semibold text-white">Email</div>
                   <a 
                     href="mailto:paul@paulsilvamarketing.com" 
+                    onClick={() => gtag.trackEmailClick()}
                     className="text-blue-400 text-sm sm:text-xl font-bold hover:text-blue-300 transition-colors break-all"
                   >
                     paul@paulsilvamarketing.com
@@ -167,6 +170,9 @@ const Contact = () => {
                   const email = (document.getElementById('email') as HTMLInputElement)?.value || '';
                   const phone = (document.getElementById('phone') as HTMLInputElement)?.value || '';
                   const message = (document.getElementById('message') as HTMLTextAreaElement)?.value || '';
+                  
+                  // Track form submission
+                  gtag.trackContactForm();
                   
                   const subject = `SEO Inquiry from ${name}`;
                   const body = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nProject Details:\n${message}`;

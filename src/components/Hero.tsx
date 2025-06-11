@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
+import * as gtag from '../lib/gtag';
 
 const Hero = () => {
   return (
@@ -16,10 +19,10 @@ const Hero = () => {
         <div className="flex flex-col justify-center items-start min-h-screen pt-20 pb-8">
           <header className="mb-6 space-y-1">
             <p className="text-sm sm:text-base md:text-lg text-blue-200 font-semibold">
-              EMAIL: <a href="mailto:paul@paulsilvamarketing.com" className="hover:text-white transition-colors" title="Email Paul Silva Marketing">paul@paulsilvamarketing.com</a>
+              EMAIL: <a href="mailto:paul@paulsilvamarketing.com" onClick={() => gtag.trackEmailClick()} className="hover:text-white transition-colors" title="Email Paul Silva Marketing">paul@paulsilvamarketing.com</a>
             </p>
             <p className="text-sm sm:text-base md:text-lg text-blue-200 font-semibold">
-              PHONE: <a href="tel:3235221424" className="hover:text-white transition-colors" title="Call Paul Silva Marketing">(323) 522-1424</a>
+              PHONE: <a href="tel:3235221424" onClick={() => gtag.trackPhoneCall()} className="hover:text-white transition-colors" title="Call Paul Silva Marketing">(323) 522-1424</a>
             </p>
           </header>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
@@ -32,6 +35,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
             <a 
               href="tel:3235221424"
+              onClick={() => gtag.trackPhoneCall()}
               className="bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold hover:bg-gray-100 transition-colors text-center"
               title="Call Paul Silva Marketing for immediate consultation"
             >
