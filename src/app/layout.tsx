@@ -17,14 +17,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://paulsilvamarketing.com'),
+  metadataBase: new URL('https://www.paulsilvamarketing.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Marketing for Home Services | Paul Silva Marketing",
     description: "Expert digital marketing consultant for home service businesses in Los Angeles. Specializing in SEO, Google Ads, and lead generation for HVAC, plumbing, electrical, construction companies.",
-    url: 'https://paulsilvamarketing.com',
+    url: 'https://www.paulsilvamarketing.com',
     siteName: 'Paul Silva Marketing',
     images: [
       {
@@ -74,11 +74,11 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "@id": "https://paulsilvamarketing.com",
+              "@id": "https://www.paulsilvamarketing.com",
               "name": "Paul Silva Marketing",
               "alternateName": "Paul Silva Digital Marketing",
               "description": "Expert digital marketing consultant specializing in marketing for home service businesses including HVAC, plumbing, electrical, construction, and cleaning companies in Los Angeles.",
-              "url": "https://paulsilvamarketing.com",
+              "url": "https://www.paulsilvamarketing.com",
               "telephone": "+1-323-522-1424",
               "email": "paul@paulsilvamarketing.com",
               "address": {
@@ -132,7 +132,7 @@ export default function RootLayout({
               "name": "Paul Silva",
               "jobTitle": "Digital Marketing Consultant",
               "description": "Expert digital marketing consultant specializing in marketing strategies for home service businesses. Proven track record of increasing leads by 300%+ for HVAC, plumbing, electrical, construction, and cleaning companies.",
-              "url": "https://paulsilvamarketing.com/about",
+              "url": "https://www.paulsilvamarketing.com/about",
               "email": "paul@paulsilvamarketing.com",
               "telephone": "+1-323-522-1424",
               "address": {

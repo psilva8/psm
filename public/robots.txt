@@ -34,4 +34,4 @@ Allow: /
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://psm.pages.dev/sitemap.xml 
+Sitemap: https://www.paulsilvamarketing.com/sitemap.xml 
