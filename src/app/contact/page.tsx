@@ -65,7 +65,7 @@ export default function Contact() {
       <section 
         className="pt-24 pb-16 bg-cover bg-center bg-no-repeat relative"
         style={{
-          backgroundImage: "url('/images/contact marketing for home services.jpg')"
+          backgroundImage: "url('/images/marketing services.jpg')"
         }}
       >
         <div className="absolute inset-0 bg-black opacity-60"></div>
