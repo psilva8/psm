@@ -1,12 +1,1 @@
-{
-  "/about/page": "app/about/page.js",
-  "/portfolio/page": "app/portfolio/page.js",
-  "/page": "app/page.js",
-  "/services/plumber-marketing/page": "app/services/plumber-marketing/page.js",
-  "/services/contractor-marketing/page": "app/services/contractor-marketing/page.js",
-  "/services/construction-marketing/page": "app/services/construction-marketing/page.js",
-  "/services/hvac-marketing/page": "app/services/hvac-marketing/page.js",
-  "/services/electrician-marketing/page": "app/services/electrician-marketing/page.js",
-  "/services/cleaning-companies-marketing/page": "app/services/cleaning-companies-marketing/page.js",
-  "/contact/page": "app/contact/page.js"
-}
+{}
