@@ -65,7 +65,7 @@ const FreeConsultation = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Ready to Grow Your Business?
           </h2>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-xl text-navy-100 max-w-3xl mx-auto">
             Get a free consultation and discover how we can help you dominate your local market. 
             No obligation, just actionable insights for your business.
           </p>
@@ -82,7 +82,7 @@ const FreeConsultation = () => {
                 <div className="text-yellow-400 text-xl mr-4 mt-1">✓</div>
                 <div>
                   <h4 className="font-semibold text-lg">Complete Marketing Audit</h4>
-                  <p className="text-blue-100">We'll analyze your current online presence and identify opportunities for growth</p>
+                  <p className="text-navy-100">We'll analyze your current online presence and identify opportunities for growth</p>
                 </div>
               </div>
               
@@ -90,7 +90,7 @@ const FreeConsultation = () => {
                 <div className="text-yellow-400 text-xl mr-4 mt-1">✓</div>
                 <div>
                   <h4 className="font-semibold text-lg">Custom Strategy Roadmap</h4>
-                  <p className="text-blue-100">Get a personalized plan tailored specifically to your business and market</p>
+                  <p className="text-navy-100">Get a personalized plan tailored specifically to your business and market</p>
                 </div>
               </div>
               
@@ -98,7 +98,7 @@ const FreeConsultation = () => {
                 <div className="text-yellow-400 text-xl mr-4 mt-1">✓</div>
                 <div>
                   <h4 className="font-semibold text-lg">Competitor Analysis</h4>
-                  <p className="text-blue-100">See how you stack up against competitors and find your competitive advantage</p>
+                  <p className="text-navy-100">See how you stack up against competitors and find your competitive advantage</p>
                 </div>
               </div>
               
@@ -106,17 +106,17 @@ const FreeConsultation = () => {
                 <div className="text-yellow-400 text-xl mr-4 mt-1">✓</div>
                 <div>
                   <h4 className="font-semibold text-lg">ROI Projections</h4>
-                  <p className="text-blue-100">Understand the potential return on your marketing investment</p>
+                  <p className="text-navy-100">Understand the potential return on your marketing investment</p>
                 </div>
               </div>
             </div>
 
-            <div className="mt-8 p-6 bg-blue-700 rounded-lg">
+            <div className="mt-8 p-6 bg-navy-700 rounded-lg">
               <div className="flex items-center">
                 <div className="text-yellow-400 text-2xl mr-4">🎯</div>
                 <div>
                   <h4 className="font-bold text-lg">100% Free - No Strings Attached</h4>
-                  <p className="text-blue-100 text-sm">This consultation is completely free with no obligation to work with us.</p>
+                  <p className="text-navy-100 text-sm">This consultation is completely free with no obligation to work with us.</p>
                 </div>
               </div>
             </div>
@@ -167,7 +167,7 @@ const FreeConsultation = () => {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent text-sm"
                     placeholder="Your full name"
                   />
                 </div>
@@ -183,7 +183,7 @@ const FreeConsultation = () => {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent text-sm"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -200,7 +200,7 @@ const FreeConsultation = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent text-sm"
                     placeholder="(555) 123-4567"
                   />
                 </div>
@@ -215,7 +215,7 @@ const FreeConsultation = () => {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent text-sm"
                     placeholder="Your company name"
                   />
                 </div>
@@ -230,7 +230,7 @@ const FreeConsultation = () => {
                   name="service"
                   value={formData.service}
                   onChange={handleChange}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent text-sm"
                 >
                   <option value="">Select your business type</option>
                   <option value="HVAC">HVAC Company</option>
@@ -253,7 +253,7 @@ const FreeConsultation = () => {
                   rows={3}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent text-sm"
                   placeholder="Tell me about your current marketing challenges and goals..."
                 ></textarea>
               </div>
@@ -264,7 +264,7 @@ const FreeConsultation = () => {
                 className={`w-full py-3 px-6 rounded-md transition-colors font-semibold text-lg ${
                   state.submitting 
                     ? 'bg-gray-400 text-gray-700 cursor-not-allowed' 
-                    : 'bg-blue-600 text-white hover:bg-blue-700'
+                    : 'bg-navy-600 text-white hover:bg-navy-700'
                 }`}
               >
                 {state.submitting ? (

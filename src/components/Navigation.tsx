@@ -97,7 +97,7 @@ const Navigation = () => {
               onMouseLeave={() => !isMobile && setIsServicesOpen(false)}
             >
               <button 
-                className="text-gray-600 hover:text-blue-600 transition-colors flex items-center py-2 touch-manipulation"
+                className="text-gray-600 hover:text-navy-600 transition-colors flex items-center py-2 touch-manipulation"
                 onClick={() => isMobile && handleServicesToggle()}
               >
                 Services
@@ -113,7 +113,7 @@ const Navigation = () => {
                       <Link
                         key={service.href}
                         href={service.href}
-                        className="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors touch-manipulation"
+                        className="block px-4 py-3 text-sm text-gray-700 hover:bg-navy-50 hover:text-navy-600 transition-colors touch-manipulation"
                         onClick={closeMobileMenu}
                       >
                         {service.name}
@@ -126,31 +126,31 @@ const Navigation = () => {
 
             <Link 
               href="/portfolio" 
-              className="text-gray-600 hover:text-blue-600 transition-colors touch-manipulation"
+              className="text-gray-600 hover:text-navy-600 transition-colors touch-manipulation"
             >
               Portfolio
             </Link>
             <Link 
               href="/blog" 
-              className="text-gray-600 hover:text-blue-600 transition-colors touch-manipulation"
+              className="text-gray-600 hover:text-navy-600 transition-colors touch-manipulation"
             >
               Blog
             </Link>
             <Link 
               href="/about" 
-              className="text-gray-600 hover:text-blue-600 transition-colors touch-manipulation"
+              className="text-gray-600 hover:text-navy-600 transition-colors touch-manipulation"
             >
               About
             </Link>
             <Link 
               href="/contact" 
-              className="text-gray-600 hover:text-blue-600 transition-colors touch-manipulation"
+              className="text-gray-600 hover:text-navy-600 transition-colors touch-manipulation"
             >
               Contact
             </Link>
             <Link 
               href="/#contact" 
-              className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors font-semibold touch-manipulation"
+              className="bg-navy-600 text-white px-6 py-2 rounded-md hover:bg-navy-700 transition-colors font-semibold touch-manipulation"
             >
               Free Consultation
             </Link>
@@ -183,7 +183,7 @@ const Navigation = () => {
               <div>
                 <button
                   onClick={handleServicesToggle}
-                  className="flex items-center justify-between w-full px-3 py-3 text-gray-600 hover:text-blue-600 transition-colors touch-manipulation"
+                  className="flex items-center justify-between w-full px-3 py-3 text-gray-600 hover:text-navy-600 transition-colors touch-manipulation"
                   aria-expanded={isServicesOpen}
                 >
                   Services
@@ -203,7 +203,7 @@ const Navigation = () => {
                       <Link
                         key={service.href}
                         href={service.href}
-                        className="block px-3 py-3 text-sm text-gray-600 hover:text-blue-600 transition-colors touch-manipulation"
+                        className="block px-3 py-3 text-sm text-gray-600 hover:text-navy-600 transition-colors touch-manipulation"
                         onClick={closeMobileMenu}
                       >
                         {service.name}
@@ -215,35 +215,35 @@ const Navigation = () => {
 
               <Link 
                 href="/portfolio" 
-                className="block px-3 py-3 text-gray-600 hover:text-blue-600 transition-colors touch-manipulation"
+                className="block px-3 py-3 text-gray-600 hover:text-navy-600 transition-colors touch-manipulation"
                 onClick={closeMobileMenu}
               >
                 Portfolio
               </Link>
               <Link 
                 href="/blog" 
-                className="block px-3 py-3 text-gray-600 hover:text-blue-600 transition-colors touch-manipulation"
+                className="block px-3 py-3 text-gray-600 hover:text-navy-600 transition-colors touch-manipulation"
                 onClick={closeMobileMenu}
               >
                 Blog
               </Link>
               <Link 
                 href="/about" 
-                className="block px-3 py-3 text-gray-600 hover:text-blue-600 transition-colors touch-manipulation"
+                className="block px-3 py-3 text-gray-600 hover:text-navy-600 transition-colors touch-manipulation"
                 onClick={closeMobileMenu}
               >
                 About
               </Link>
               <Link 
                 href="/contact" 
-                className="block px-3 py-3 text-gray-600 hover:text-blue-600 transition-colors touch-manipulation"
+                className="block px-3 py-3 text-gray-600 hover:text-navy-600 transition-colors touch-manipulation"
                 onClick={closeMobileMenu}
               >
                 Contact
               </Link>
               <Link 
                 href="/#contact" 
-                className="block mx-3 my-2 bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors font-semibold text-center touch-manipulation"
+                className="block mx-3 my-2 bg-navy-600 text-white px-6 py-3 rounded-md hover:bg-navy-700 transition-colors font-semibold text-center touch-manipulation"
                 onClick={closeMobileMenu}
               >
                 Free Consultation

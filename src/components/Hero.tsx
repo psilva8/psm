@@ -18,10 +18,10 @@ const Hero = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[80vh]">
         <div className="flex flex-col justify-center items-start min-h-[80vh] pt-20 pb-8">
           <header className="mb-6 space-y-1">
-            <p className="text-sm sm:text-base md:text-lg text-blue-200 font-semibold">
+            <p className="text-sm sm:text-base md:text-lg text-navy-200 font-semibold">
               EMAIL: <a href="mailto:paul@paulsilvamarketing.com" onClick={() => gtag.trackEmailClick()} className="hover:text-white transition-colors" title="Email Paul Silva Marketing">paul@paulsilvamarketing.com</a>
             </p>
-            <p className="text-sm sm:text-base md:text-lg text-blue-200 font-semibold">
+            <p className="text-sm sm:text-base md:text-lg text-navy-200 font-semibold">
               PHONE: <a href="tel:3235221424" onClick={() => gtag.trackPhoneCall()} className="hover:text-white transition-colors" title="Call Paul Silva Marketing">(323) 522-1424</a>
             </p>
           </header>
@@ -36,14 +36,14 @@ const Hero = () => {
             <a 
               href="tel:3235221424"
               onClick={() => gtag.trackPhoneCall()}
-              className="bg-white text-blue-600 px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold hover:bg-gray-100 transition-colors text-center"
+              className="bg-white text-navy-600 px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold hover:bg-gray-100 transition-colors text-center"
               title="Call Paul Silva Marketing for immediate consultation"
             >
               Contact Me
             </a>
             <Link 
               href="/portfolio"
-              className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors text-center"
+              className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold hover:bg-white hover:text-navy-600 transition-colors text-center"
               title="View Paul Silva Marketing portfolio and case studies"
             >
               View Work Sample

@@ -118,7 +118,7 @@ const Services = () => {
               key={index}
               className="bg-white rounded-lg shadow-lg p-6 sm:p-8 hover:shadow-xl transition-shadow"
             >
-              <div className="bg-blue-100 text-blue-600 rounded-full w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center mb-4 sm:mb-6">
+              <div className="bg-navy-100 text-navy-600 rounded-full w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center mb-4 sm:mb-6">
                 {service.icon}
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">{service.title}</h3>
@@ -126,7 +126,7 @@ const Services = () => {
               <ul className="space-y-2 sm:space-y-3">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-start">
-                    <svg className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600 mr-2 sm:mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="h-4 w-4 sm:h-5 sm:w-5 text-navy-600 mr-2 sm:mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
                     <span className="text-gray-700 text-sm sm:text-base">{feature}</span>
@@ -140,7 +140,7 @@ const Services = () => {
         <div className="text-center mt-10 sm:mt-12">
           <a 
             href="/#contact" 
-            className="inline-block bg-blue-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold hover:bg-blue-700 transition-colors"
+            className="inline-block bg-navy-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-base sm:text-lg font-semibold hover:bg-navy-700 transition-colors"
           >
             Get Your Free Marketing Consultation
           </a>

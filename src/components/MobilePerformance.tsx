@@ -82,7 +82,7 @@ const MobilePerformance: React.FC<MobilePerformanceProps> = ({
   if (isLoading && isMobile && isSlowConnection && fallback) {
     return (
       <div className="flex flex-col items-center justify-center min-h-[200px] p-4">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mb-4"></div>
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-navy-600 mb-4"></div>
         <p className="text-gray-600 text-sm text-center">Optimizing for your connection...</p>
         {fallback}
       </div>
@@ -93,7 +93,7 @@ const MobilePerformance: React.FC<MobilePerformanceProps> = ({
   if (isLoading) {
     return (
       <div className="flex items-center justify-center min-h-[200px]">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-navy-600"></div>
       </div>
     );
   }

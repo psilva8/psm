@@ -74,7 +74,7 @@ export default function Contact() {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Get In Touch
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-navy-100 mb-8 max-w-3xl mx-auto">
               Ready to grow your home service business? Let's discuss how we can help you dominate your local market.
             </p>
           </div>
@@ -135,7 +135,7 @@ export default function Contact() {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent"
                       placeholder="Your full name"
                     />
                   </div>
@@ -151,7 +151,7 @@ export default function Contact() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent"
                       placeholder="your@email.com"
                     />
                   </div>
@@ -168,7 +168,7 @@ export default function Contact() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent"
                       placeholder="(555) 123-4567"
                     />
                   </div>
@@ -183,7 +183,7 @@ export default function Contact() {
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent"
                       placeholder="Your company name"
                     />
                   </div>
@@ -198,7 +198,7 @@ export default function Contact() {
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent"
                   >
                     <option value="">Select your business type</option>
                     <option value="HVAC">HVAC Company</option>
@@ -221,7 +221,7 @@ export default function Contact() {
                     rows={5}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent"
                     placeholder="What are your biggest marketing challenges? What results are you looking to achieve?"
                   ></textarea>
                 </div>
@@ -232,7 +232,7 @@ export default function Contact() {
                   className={`w-full py-3 px-6 rounded-md transition-colors font-semibold text-lg ${
                     state.submitting 
                       ? 'bg-gray-400 text-gray-700 cursor-not-allowed' 
-                      : 'bg-blue-600 text-white hover:bg-blue-700'
+                      : 'bg-navy-600 text-white hover:bg-navy-700'
                   }`}
                 >
                   {state.submitting ? (
@@ -272,27 +272,27 @@ export default function Contact() {
                 
                 <div className="space-y-4">
                   <div className="flex items-center">
-                    <div className="text-blue-600 text-xl mr-4">📧</div>
+                    <div className="text-navy-600 text-xl mr-4">📧</div>
                     <div>
                       <div className="font-semibold text-gray-900">Email</div>
-                      <a href="mailto:paul@paulsilvamarketing.com" className="text-blue-600 hover:text-blue-700">
+                      <a href="mailto:paul@paulsilvamarketing.com" className="text-navy-600 hover:text-navy-700">
                         paul@paulsilvamarketing.com
                       </a>
                     </div>
                   </div>
                   
                   <div className="flex items-center">
-                    <div className="text-blue-600 text-xl mr-4">📞</div>
+                    <div className="text-navy-600 text-xl mr-4">📞</div>
                     <div>
                       <div className="font-semibold text-gray-900">Phone</div>
-                      <a href="tel:3235221424" className="text-blue-600 hover:text-blue-700">
+                      <a href="tel:3235221424" className="text-navy-600 hover:text-navy-700">
                         (323) 522-1424
                       </a>
                     </div>
                   </div>
                   
                   <div className="flex items-center">
-                    <div className="text-blue-600 text-xl mr-4">📍</div>
+                    <div className="text-navy-600 text-xl mr-4">📍</div>
                     <div>
                       <div className="font-semibold text-gray-900">Service Area</div>
                       <div className="text-gray-600">Los Angeles & Surrounding Areas</div>
@@ -320,8 +320,8 @@ export default function Contact() {
                   </div>
                 </div>
                 
-                <div className="mt-4 p-4 bg-blue-50 rounded-lg">
-                  <p className="text-sm text-blue-800">
+                <div className="mt-4 p-4 bg-navy-50 rounded-lg">
+                  <p className="text-sm text-navy-800">
                     <strong>Emergency consultations available.</strong> If you have an urgent marketing need, 
                     don't hesitate to call or email outside business hours.
                   </p>
@@ -334,7 +334,7 @@ export default function Contact() {
                 
                 <div className="space-y-4">
                   <div className="flex items-start">
-                    <div className="text-blue-600 text-lg mr-3 mt-1">1️⃣</div>
+                    <div className="text-navy-600 text-lg mr-3 mt-1">1️⃣</div>
                     <div>
                       <div className="font-semibold text-gray-900">Initial Consultation</div>
                       <div className="text-gray-600 text-sm">Free 30-minute discussion about your business goals and challenges</div>
@@ -342,7 +342,7 @@ export default function Contact() {
                   </div>
                   
                   <div className="flex items-start">
-                    <div className="text-blue-600 text-lg mr-3 mt-1">2️⃣</div>
+                    <div className="text-navy-600 text-lg mr-3 mt-1">2️⃣</div>
                     <div>
                       <div className="font-semibold text-gray-900">Marketing Audit</div>
                       <div className="text-gray-600 text-sm">Comprehensive review of your current online presence and opportunities</div>
@@ -350,7 +350,7 @@ export default function Contact() {
                   </div>
                   
                   <div className="flex items-start">
-                    <div className="text-blue-600 text-lg mr-3 mt-1">3️⃣</div>
+                    <div className="text-navy-600 text-lg mr-3 mt-1">3️⃣</div>
                     <div>
                       <div className="font-semibold text-gray-900">Custom Strategy</div>
                       <div className="text-gray-600 text-sm">Tailored marketing plan designed specifically for your business</div>

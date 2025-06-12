@@ -95,7 +95,7 @@ const FAQ = () => {
           {faqs.map((faq, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md">
               <button
-                className="w-full text-left p-4 sm:p-6 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-inset"
+                className="w-full text-left p-4 sm:p-6 focus:outline-none focus:ring-2 focus:ring-navy-500 focus:ring-inset"
                 onClick={() => toggleFAQ(index)}
                 aria-expanded={openIndex === index}
                 aria-controls={`faq-answer-${index}`}
@@ -139,7 +139,7 @@ const FAQ = () => {
           </p>
           <a
             href="tel:3235221424"
-            className="inline-block bg-blue-600 text-white px-6 sm:px-8 py-3 rounded-md font-semibold hover:bg-blue-700 transition-colors"
+            className="inline-block bg-navy-600 text-white px-6 sm:px-8 py-3 rounded-md font-semibold hover:bg-navy-700 transition-colors"
             title="Call Paul Silva Marketing for answers to your questions"
           >
             Call (323) 522-1424

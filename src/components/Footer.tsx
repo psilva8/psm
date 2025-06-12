@@ -55,7 +55,7 @@ const Footer = () => {
             <div className="text-center">
               <a 
                 href="tel:3235221424" 
-                className="text-blue-400 font-semibold hover:text-blue-300 transition-colors"
+                className="text-navy-400 font-semibold hover:text-navy-300 transition-colors"
                 title="Call Paul Silva Marketing"
               >
                 +1 (323) 522-1424
@@ -64,7 +64,7 @@ const Footer = () => {
             <div className="text-center">
               <a 
                 href="mailto:paul@paulsilvamarketing.com" 
-                className="text-blue-400 font-semibold hover:text-blue-300 transition-colors"
+                className="text-navy-400 font-semibold hover:text-navy-300 transition-colors"
                 title="Email Paul Silva Marketing"
               >
                 paul@paulsilvamarketing.com

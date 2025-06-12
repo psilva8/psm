@@ -73,7 +73,7 @@ export default function Blog() {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Marketing Insights
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-navy-100 mb-8 max-w-3xl mx-auto">
               Expert tips, strategies, and insights to help your home service business grow through effective digital marketing.
             </p>
           </div>
@@ -91,10 +91,10 @@ export default function Blog() {
                 <div className="md:flex">
                   <div className="md:w-2/3 p-8">
                     <div className="flex items-center mb-4">
-                      <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">
+                      <span className="bg-navy-600 text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">
                         Featured
                       </span>
-                      <span className="text-blue-600 font-semibold text-sm">{post.category}</span>
+                      <span className="text-navy-600 font-semibold text-sm">{post.category}</span>
                     </div>
                     <h2 className="text-3xl font-bold text-gray-900 mb-4">{post.title}</h2>
                     <p className="text-gray-600 mb-6 text-lg">{post.excerpt}</p>
@@ -106,15 +106,15 @@ export default function Blog() {
                       </div>
                       <Link 
                         href="#" 
-                        className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors font-semibold"
+                        className="bg-navy-600 text-white px-6 py-2 rounded-md hover:bg-navy-700 transition-colors font-semibold"
                       >
                         Read Article
                       </Link>
                     </div>
                   </div>
-                  <div className="md:w-1/3 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center p-8">
+                  <div className="md:w-1/3 bg-gradient-to-br from-blue-100 to-navy-200 flex items-center justify-center p-8">
                     <div className="text-center">
-                      <div className="text-6xl text-blue-600 mb-4">📊</div>
+                      <div className="text-6xl text-navy-600 mb-4">📊</div>
                       <p className="text-gray-700 font-semibold">Local SEO Guide</p>
                     </div>
                   </div>
@@ -132,14 +132,14 @@ export default function Blog() {
                 <article key={post.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
                   <div className="h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
                     <div className="text-center">
-                      <div className="text-4xl text-blue-600 mb-2">
+                      <div className="text-4xl text-navy-600 mb-2">
                         {post.category === 'PPC' && '💰'}
                         {post.category === 'Reputation' && '⭐'}
                         {post.category === 'Industry Guide' && '📖'}
                         {post.category === 'Web Design' && '📱'}
                         {post.category === 'Strategy' && '🎯'}
                       </div>
-                      <span className="text-blue-600 font-semibold text-sm">{post.category}</span>
+                      <span className="text-navy-600 font-semibold text-sm">{post.category}</span>
                     </div>
                   </div>
                   
@@ -154,7 +154,7 @@ export default function Blog() {
                     
                     <Link 
                       href="#" 
-                      className="text-blue-600 font-semibold hover:text-blue-700 transition-colors"
+                      className="text-navy-600 font-semibold hover:text-navy-700 transition-colors"
                     >
                       Read More →
                     </Link>
@@ -175,9 +175,9 @@ export default function Blog() {
               <input 
                 type="email" 
                 placeholder="Enter your email" 
-                className="flex-1 px-4 py-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="flex-1 px-4 py-3 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-navy-500"
               />
-              <button className="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition-colors font-semibold">
+              <button className="bg-navy-600 text-white px-6 py-3 rounded-md hover:bg-navy-700 transition-colors font-semibold">
                 Subscribe
               </button>
             </div>

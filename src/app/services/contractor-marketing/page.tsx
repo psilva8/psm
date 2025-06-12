@@ -20,12 +20,12 @@ export default function ContractorMarketing() {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Contractor Marketing
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-navy-100 mb-8 max-w-3xl mx-auto">
               Build your reputation and attract high-value projects with proven contractor marketing strategies that showcase your expertise.
             </p>
             <Link 
               href="/#contact" 
-              className="inline-block bg-white text-blue-600 px-8 py-4 rounded-md text-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="inline-block bg-white text-navy-600 px-8 py-4 rounded-md text-lg font-semibold hover:bg-gray-100 transition-colors"
             >
               Get Your Free Contractor Marketing Audit
             </Link>
@@ -107,18 +107,18 @@ export default function ContractorMarketing() {
           {/* Contractor-Specific Benefits */}
           <div className="mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Contractor Industry Results</h2>
-            <div className="bg-blue-50 p-8 rounded-lg">
+            <div className="bg-navy-50 p-8 rounded-lg">
               <div className="grid md:grid-cols-3 gap-8 text-center">
                 <div>
-                  <div className="text-3xl font-bold text-blue-600 mb-2">250%+</div>
+                  <div className="text-3xl font-bold text-navy-600 mb-2">250%+</div>
                   <div className="text-gray-700">Increase in project inquiries</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-blue-600 mb-2">$25K+</div>
+                  <div className="text-3xl font-bold text-navy-600 mb-2">$25K+</div>
                   <div className="text-gray-700">Average project value increase</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-blue-600 mb-2">95%</div>
+                  <div className="text-3xl font-bold text-navy-600 mb-2">95%</div>
                   <div className="text-gray-700">Client satisfaction rate</div>
                 </div>
               </div>
@@ -168,7 +168,7 @@ export default function ContractorMarketing() {
             <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
               <Link 
                 href="/#contact" 
-                className="inline-block bg-blue-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-blue-700 transition-colors"
+                className="inline-block bg-navy-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-navy-700 transition-colors"
               >
                 Get Free Audit
               </Link>

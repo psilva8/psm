@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section id="about" className="py-8 sm:py-12 lg:py-16 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section id="about" className="py-8 sm:py-12 lg:py-16 bg-gradient-to-br from-gray-50 to-navy-50">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-8 sm:mb-12">
@@ -11,9 +11,9 @@ const About = () => {
               <img 
                 src="/images/Local SEO Los Angeles.jpg" 
                 alt="Paul Silva - Digital Marketing Consultant"
-                className="h-24 w-24 sm:h-32 sm:w-32 rounded-full object-cover object-top border-2 border-blue-600 shadow-md"
+                className="h-24 w-24 sm:h-32 sm:w-32 rounded-full object-cover object-top border-2 border-navy-600 shadow-md"
               />
-              <div className="absolute -bottom-0.5 -right-0.5 bg-blue-600 text-white rounded-full p-0.5">
+              <div className="absolute -bottom-0.5 -right-0.5 bg-navy-600 text-white rounded-full p-0.5">
                 <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                 </svg>
@@ -22,9 +22,9 @@ const About = () => {
             <div className="text-center md:text-left">
               <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-2">
                 Digital Marketing Consultant
-                <span className="block text-blue-600">Paul Silva</span>
+                <span className="block text-navy-600">Paul Silva</span>
               </h2>
-              <div className="inline-flex items-center bg-blue-100 text-blue-800 px-2 py-1 rounded-full font-medium text-xs sm:text-sm">
+              <div className="inline-flex items-center bg-navy-100 text-navy-800 px-2 py-1 rounded-full font-medium text-xs sm:text-sm">
                 <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                 </svg>
@@ -38,13 +38,13 @@ const About = () => {
         <div className="mb-8 sm:mb-12">
           <div className="text-center mb-4 sm:mb-6">
             <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">About Me</h3>
-            <div className="w-12 h-0.5 bg-blue-600 mx-auto rounded-full"></div>
+            <div className="w-12 h-0.5 bg-navy-600 mx-auto rounded-full"></div>
           </div>
           
           <div className="bg-white rounded-lg shadow-sm p-4 sm:p-6 max-w-3xl mx-auto">
             <div className="space-y-3 sm:space-y-4 text-gray-700 text-sm sm:text-base leading-relaxed">
               <p className="font-medium">
-                I'm <span className="text-blue-600 font-bold">Paul Silva</span>, a dedicated digital marketing consultant specializing in helping home service businesses thrive online.
+                I'm <span className="text-navy-600 font-bold">Paul Silva</span>, a dedicated digital marketing consultant specializing in helping home service businesses thrive online.
               </p>
               
               <p>
@@ -69,7 +69,7 @@ const About = () => {
         <div className="mb-8 sm:mb-12">
           <div className="text-center mb-4 sm:mb-6">
             <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Home Service Marketing Expertise</h3>
-            <div className="w-12 h-0.5 bg-blue-600 mx-auto rounded-full"></div>
+            <div className="w-12 h-0.5 bg-navy-600 mx-auto rounded-full"></div>
           </div>
           
           <div className="rounded-lg shadow-sm p-4 sm:p-6 text-white max-w-3xl mx-auto" style={{ backgroundColor: '#111827' }}>
@@ -85,7 +85,7 @@ const About = () => {
         <div>
           <div className="text-center mb-6 sm:mb-8">
             <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Digital Marketing Tools & Platforms</h3>
-            <div className="w-12 h-0.5 bg-blue-600 mx-auto rounded-full"></div>
+            <div className="w-12 h-0.5 bg-navy-600 mx-auto rounded-full"></div>
           </div>
           
           <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 items-start">
@@ -124,7 +124,7 @@ const About = () => {
               ].map((tool, index) => (
                 <div key={index} className="bg-white rounded-lg shadow-sm p-3 sm:p-4 hover:shadow-md transition-shadow duration-300 border border-gray-100">
                   <div className="flex items-start space-x-3">
-                    <div className="bg-blue-100 text-blue-600 rounded-lg p-2 flex-shrink-0">
+                    <div className="bg-navy-100 text-navy-600 rounded-lg p-2 flex-shrink-0">
                       <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={tool.icon} />
                       </svg>
@@ -146,7 +146,7 @@ const About = () => {
                     alt="Digital Marketing Consultant Paul Silva"
                     className="w-full rounded-lg shadow-sm object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-lg"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-900/20 to-transparent rounded-lg"></div>
                 </div>
                 
                 <div className="relative">
@@ -155,7 +155,7 @@ const About = () => {
                     alt="Marketing for Home Services"
                     className="w-full rounded-lg shadow-sm object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-lg"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-900/20 to-transparent rounded-lg"></div>
                 </div>
                 
                 <div className="relative">
@@ -164,7 +164,7 @@ const About = () => {
                     alt="Marketing for Contractors"
                     className="w-full rounded-lg shadow-sm object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-lg"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-900/20 to-transparent rounded-lg"></div>
                 </div>
               </div>
             </div>

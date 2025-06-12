@@ -80,12 +80,12 @@ export default function HVACMarketing() {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               HVAC Marketing Services
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-navy-100 mb-8 max-w-3xl mx-auto">
               Dominate your local market with proven HVAC marketing strategies that generate qualified leads and grow your business year-round.
             </p>
             <Link 
               href="/#contact" 
-              className="inline-block bg-white text-blue-600 px-8 py-4 rounded-md text-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="inline-block bg-white text-navy-600 px-8 py-4 rounded-md text-lg font-semibold hover:bg-gray-100 transition-colors"
             >
               Get Your Free HVAC Marketing Audit
             </Link>
@@ -167,18 +167,18 @@ export default function HVACMarketing() {
           {/* Benefits Section */}
           <div className="mb-12 sm:mb-16">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8">Results You Can Expect</h2>
-            <div className="bg-blue-50 p-6 sm:p-8 rounded-lg">
+            <div className="bg-navy-50 p-6 sm:p-8 rounded-lg">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 text-center">
                 <div>
-                  <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-2">300%+</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-navy-600 mb-2">300%+</div>
                   <div className="text-gray-700 text-sm sm:text-base">Increase in qualified leads</div>
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-2">85%</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-navy-600 mb-2">85%</div>
                   <div className="text-gray-700 text-sm sm:text-base">Improvement in local rankings</div>
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-2">24/7</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-navy-600 mb-2">24/7</div>
                   <div className="text-gray-700 text-sm sm:text-base">Lead generation system</div>
                 </div>
               </div>
@@ -194,7 +194,7 @@ export default function HVACMarketing() {
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-4 sm:justify-center">
               <Link 
                 href="/#contact" 
-                className="inline-block bg-blue-600 text-white px-6 sm:px-8 py-3 rounded-md font-semibold hover:bg-blue-700 transition-colors text-center"
+                className="inline-block bg-navy-600 text-white px-6 sm:px-8 py-3 rounded-md font-semibold hover:bg-navy-700 transition-colors text-center"
               >
                 Get Free Audit
               </Link>

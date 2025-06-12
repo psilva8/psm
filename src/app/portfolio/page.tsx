@@ -20,7 +20,7 @@ export default function Portfolio() {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Case Studies
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-navy-100 mb-8 max-w-3xl mx-auto">
               Real results for real businesses. See how we've helped home service companies transform their digital presence and grow their revenue.
             </p>
           </div>
@@ -58,12 +58,12 @@ export default function Portfolio() {
                   </div>
                   
                   <div className="grid grid-cols-2 gap-3 sm:gap-4">
-                    <div className="text-center p-3 sm:p-4 bg-blue-50 rounded-lg">
-                      <div className="text-xl sm:text-2xl font-bold text-blue-600">400%</div>
+                    <div className="text-center p-3 sm:p-4 bg-navy-50 rounded-lg">
+                      <div className="text-xl sm:text-2xl font-bold text-navy-600">400%</div>
                       <div className="text-xs sm:text-sm text-gray-600">Lead Increase</div>
                     </div>
-                    <div className="text-center p-3 sm:p-4 bg-blue-50 rounded-lg">
-                      <div className="text-xl sm:text-2xl font-bold text-blue-600">#1</div>
+                    <div className="text-center p-3 sm:p-4 bg-navy-50 rounded-lg">
+                      <div className="text-xl sm:text-2xl font-bold text-navy-600">#1</div>
                       <div className="text-xs sm:text-sm text-gray-600">Google Ranking</div>
                     </div>
                   </div>
@@ -71,7 +71,7 @@ export default function Portfolio() {
                 
                 <div className="md:w-1/2 bg-gray-100 flex items-center justify-center p-6 sm:p-8 min-h-[200px] md:min-h-0">
                   <div className="text-center">
-                    <div className="text-4xl sm:text-6xl text-blue-600 mb-4">📈</div>
+                    <div className="text-4xl sm:text-6xl text-navy-600 mb-4">📈</div>
                     <p className="text-gray-600 text-sm sm:text-base">Before & After Analytics</p>
                   </div>
                 </div>
@@ -99,7 +99,7 @@ export default function Portfolio() {
                     Increased emergency call volume by 350% through targeted local SEO and Google Ads campaigns.
                   </p>
                   <div className="flex justify-between text-xs sm:text-sm">
-                    <span className="text-blue-600 font-semibold">+350% Calls</span>
+                    <span className="text-navy-600 font-semibold">+350% Calls</span>
                     <span className="text-gray-500">6 months</span>
                   </div>
                 </div>
@@ -119,7 +119,7 @@ export default function Portfolio() {
                     Dominated local electrical searches and increased average project value through strategic positioning.
                   </p>
                   <div className="flex justify-between text-xs sm:text-sm">
-                    <span className="text-blue-600 font-semibold">+$50K Revenue</span>
+                    <span className="text-navy-600 font-semibold">+$50K Revenue</span>
                     <span className="text-gray-500">4 months</span>
                   </div>
                 </div>
@@ -139,7 +139,7 @@ export default function Portfolio() {
                     Complete brand overhaul and digital presence resulted in higher-value project inquiries.
                   </p>
                   <div className="flex justify-between text-xs sm:text-sm">
-                    <span className="text-blue-600 font-semibold">+200% Inquiries</span>
+                    <span className="text-navy-600 font-semibold">+200% Inquiries</span>
                     <span className="text-gray-500">8 months</span>
                   </div>
                 </div>
@@ -159,7 +159,7 @@ export default function Portfolio() {
                     Built recurring client base through trust-focused marketing and online booking optimization.
                   </p>
                   <div className="flex justify-between text-xs sm:text-sm">
-                    <span className="text-blue-600 font-semibold">+300% Clients</span>
+                    <span className="text-navy-600 font-semibold">+300% Clients</span>
                     <span className="text-gray-500">5 months</span>
                   </div>
                 </div>
@@ -179,7 +179,7 @@ export default function Portfolio() {
                     Improved local search rankings and showcase portfolio to attract premium residential projects.
                   </p>
                   <div className="flex justify-between text-xs sm:text-sm">
-                    <span className="text-blue-600 font-semibold">+$100K Projects</span>
+                    <span className="text-navy-600 font-semibold">+$100K Projects</span>
                     <span className="text-gray-500">7 months</span>
                   </div>
                 </div>
@@ -199,7 +199,7 @@ export default function Portfolio() {
                     Complete digital overhaul including website redesign, SEO, and reputation management.
                   </p>
                   <div className="flex justify-between text-xs sm:text-sm">
-                    <span className="text-blue-600 font-semibold">+500% Leads</span>
+                    <span className="text-navy-600 font-semibold">+500% Leads</span>
                     <span className="text-gray-500">9 months</span>
                   </div>
                 </div>
@@ -217,7 +217,7 @@ export default function Portfolio() {
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-4 sm:justify-center">
               <Link 
                 href="/#contact" 
-                className="inline-block bg-blue-600 text-white px-6 sm:px-8 py-3 rounded-md font-semibold hover:bg-blue-700 transition-colors text-center"
+                className="inline-block bg-navy-600 text-white px-6 sm:px-8 py-3 rounded-md font-semibold hover:bg-navy-700 transition-colors text-center"
               >
                 Start Your Success Story
               </Link>

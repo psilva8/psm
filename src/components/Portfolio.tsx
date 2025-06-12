@@ -58,27 +58,27 @@ const Portfolio = () => {
           </div>
 
           <div className="mt-8 text-center">
-            <div className="inline-flex items-center bg-blue-100 px-6 py-3 rounded-lg">
-              <svg className="h-6 w-6 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="inline-flex items-center bg-navy-100 px-6 py-3 rounded-lg">
+              <svg className="h-6 w-6 text-navy-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
               </svg>
-              <span className="text-blue-800 font-semibold">
+              <span className="text-navy-800 font-semibold">
                 Ranking Improvement: From 14.09 to 5.92 (58% improvement)
               </span>
             </div>
           </div>
 
           <div className="mt-6 grid md:grid-cols-3 gap-4 text-center">
-            <div className="bg-blue-50 p-4 rounded-lg">
-              <div className="text-2xl font-bold text-blue-600">Local SEO</div>
+            <div className="bg-navy-50 p-4 rounded-lg">
+              <div className="text-2xl font-bold text-navy-600">Local SEO</div>
               <div className="text-sm text-gray-600">Applied</div>
             </div>
-            <div className="bg-blue-50 p-4 rounded-lg">
-              <div className="text-2xl font-bold text-blue-600">Technical SEO</div>
+            <div className="bg-navy-50 p-4 rounded-lg">
+              <div className="text-2xl font-bold text-navy-600">Technical SEO</div>
               <div className="text-sm text-gray-600">Site Speed Improved</div>
             </div>
-            <div className="bg-blue-50 p-4 rounded-lg">
-              <div className="text-2xl font-bold text-blue-600">Link Building</div>
+            <div className="bg-navy-50 p-4 rounded-lg">
+              <div className="text-2xl font-bold text-navy-600">Link Building</div>
               <div className="text-sm text-gray-600">Authority Increased</div>
             </div>
           </div>
@@ -87,7 +87,7 @@ const Portfolio = () => {
         <div className="text-center">
           <a 
             href="#contact" 
-            className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-blue-700 transition-colors"
+            className="inline-flex items-center bg-navy-600 text-white px-8 py-4 rounded-md text-lg font-semibold hover:bg-navy-700 transition-colors"
           >
             Get Similar Results
             <svg className="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

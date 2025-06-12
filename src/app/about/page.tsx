@@ -100,7 +100,7 @@ export default function About() {
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               About Paul Silva
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-navy-100 mb-8 max-w-3xl mx-auto">
               Digital Marketing Expert helping home service businesses dominate their local markets through proven strategies and measurable results.
             </p>
           </div>
@@ -119,13 +119,13 @@ export default function About() {
                   <img 
                     src="/images/Local SEO Los Angeles.jpg" 
                     alt="Paul Silva - Digital Marketing Consultant for Home Services"
-                    className="h-32 w-32 sm:h-40 sm:w-40 rounded-full object-cover object-top border-4 border-blue-600 shadow-lg"
+                    className="h-32 w-32 sm:h-40 sm:w-40 rounded-full object-cover object-top border-4 border-navy-600 shadow-lg"
                   />
                 </div>
                 <div>
                   <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Digital Marketing Consultant</h2>
                   <p className="text-base sm:text-lg text-gray-700 mb-4 leading-relaxed">
-                    I'm <span className="text-blue-600 font-bold">Paul Silva</span>, a dedicated digital marketing consultant with years of experience 
+                    I'm <span className="text-navy-600 font-bold">Paul Silva</span>, a dedicated digital marketing consultant with years of experience 
                     specializing in helping home service businesses thrive online. My expertise spans across all major digital marketing channels, 
                     from SEO and Google Ads to social media marketing and email campaigns.
                   </p>
@@ -146,7 +146,7 @@ export default function About() {
               
               <div className="bg-white p-5 sm:p-6 rounded-lg shadow-md">
                 <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 sm:mb-4 flex items-center">
-                  <span className="bg-blue-100 text-blue-600 rounded-lg p-2 mr-3">
+                  <span className="bg-navy-100 text-navy-600 rounded-lg p-2 mr-3">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
@@ -160,7 +160,7 @@ export default function About() {
 
               <div className="bg-white p-5 sm:p-6 rounded-lg shadow-md">
                 <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 sm:mb-4 flex items-center">
-                  <span className="bg-blue-100 text-blue-600 rounded-lg p-2 mr-3">
+                  <span className="bg-navy-100 text-navy-600 rounded-lg p-2 mr-3">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                     </svg>
@@ -174,7 +174,7 @@ export default function About() {
 
               <div className="bg-white p-5 sm:p-6 rounded-lg shadow-md">
                 <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 sm:mb-4 flex items-center">
-                  <span className="bg-blue-100 text-blue-600 rounded-lg p-2 mr-3">
+                  <span className="bg-navy-100 text-navy-600 rounded-lg p-2 mr-3">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m-9 0h10m-10 0a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2" />
                     </svg>
@@ -188,7 +188,7 @@ export default function About() {
 
               <div className="bg-white p-5 sm:p-6 rounded-lg shadow-md">
                 <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 sm:mb-4 flex items-center">
-                  <span className="bg-blue-100 text-blue-600 rounded-lg p-2 mr-3">
+                  <span className="bg-navy-100 text-navy-600 rounded-lg p-2 mr-3">
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                     </svg>
@@ -206,18 +206,18 @@ export default function About() {
           {/* Results Section */}
           <div className="mb-12 sm:mb-16">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 text-center">Proven Results</h2>
-            <div className="bg-blue-50 p-6 sm:p-8 rounded-lg">
+            <div className="bg-navy-50 p-6 sm:p-8 rounded-lg">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 text-center">
                 <div>
-                  <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-2">300%+</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-navy-600 mb-2">300%+</div>
                   <div className="text-gray-700 text-sm sm:text-base">Average lead increase</div>
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-2">50+</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-navy-600 mb-2">50+</div>
                   <div className="text-gray-700 text-sm sm:text-base">Home service businesses helped</div>
                 </div>
                 <div>
-                  <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-2">5+</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-navy-600 mb-2">5+</div>
                   <div className="text-gray-700 text-sm sm:text-base">Years of experience</div>
                 </div>
               </div>
@@ -233,7 +233,7 @@ export default function About() {
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-4 sm:justify-center">
               <Link 
                 href="/contact" 
-                className="inline-block bg-blue-600 text-white px-6 sm:px-8 py-3 rounded-md font-semibold hover:bg-blue-700 transition-colors text-center"
+                className="inline-block bg-navy-600 text-white px-6 sm:px-8 py-3 rounded-md font-semibold hover:bg-navy-700 transition-colors text-center"
               >
                 Get Free Consultation
               </Link>

@@ -69,7 +69,7 @@ const Contact = () => {
             <div className="space-y-6">
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <div className="h-12 w-12 sm:h-14 sm:w-14 bg-blue-600 rounded-lg flex items-center justify-center touch-manipulation">
+                  <div className="h-12 w-12 sm:h-14 sm:w-14 bg-navy-600 rounded-lg flex items-center justify-center touch-manipulation">
                     <svg className="h-6 w-6 sm:h-7 sm:w-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
@@ -80,7 +80,7 @@ const Contact = () => {
                   <a 
                     href="tel:3235221424" 
                     onClick={() => gtag.trackPhoneCall()}
-                    className="text-blue-400 text-lg sm:text-xl font-bold hover:text-blue-300 transition-colors touch-manipulation inline-block py-1"
+                    className="text-navy-400 text-lg sm:text-xl font-bold hover:text-navy-300 transition-colors touch-manipulation inline-block py-1"
                   >
                     (323) 522-1424
                   </a>
@@ -89,7 +89,7 @@ const Contact = () => {
 
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <div className="h-12 w-12 sm:h-14 sm:w-14 bg-blue-600 rounded-lg flex items-center justify-center touch-manipulation">
+                  <div className="h-12 w-12 sm:h-14 sm:w-14 bg-navy-600 rounded-lg flex items-center justify-center touch-manipulation">
                     <svg className="h-6 w-6 sm:h-7 sm:w-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
@@ -100,7 +100,7 @@ const Contact = () => {
                   <a 
                     href="mailto:paul@paulsilvamarketing.com" 
                     onClick={() => gtag.trackEmailClick()}
-                    className="text-blue-400 text-sm sm:text-xl font-bold hover:text-blue-300 transition-colors break-all touch-manipulation inline-block py-1"
+                    className="text-navy-400 text-sm sm:text-xl font-bold hover:text-navy-300 transition-colors break-all touch-manipulation inline-block py-1"
                   >
                     paul@paulsilvamarketing.com
                   </a>
@@ -109,7 +109,7 @@ const Contact = () => {
 
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <div className="h-12 w-12 sm:h-14 sm:w-14 bg-blue-600 rounded-lg flex items-center justify-center">
+                  <div className="h-12 w-12 sm:h-14 sm:w-14 bg-navy-600 rounded-lg flex items-center justify-center">
                     <svg className="h-6 w-6 sm:h-7 sm:w-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -118,7 +118,7 @@ const Contact = () => {
                 </div>
                 <div className="ml-4 sm:ml-5">
                   <div className="text-base sm:text-lg font-semibold text-white">Location</div>
-                  <div className="text-blue-400 text-lg sm:text-xl font-bold">Los Angeles, CA</div>
+                  <div className="text-navy-400 text-lg sm:text-xl font-bold">Los Angeles, CA</div>
                 </div>
               </div>
             </div>
@@ -127,25 +127,25 @@ const Contact = () => {
               <h4 className="text-base sm:text-lg font-semibold text-white mb-4">Why Choose Paul Silva Marketing?</h4>
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start">
-                  <svg className="h-5 w-5 sm:h-6 sm:w-6 text-blue-400 mr-3 sm:mr-4 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="h-5 w-5 sm:h-6 sm:w-6 text-navy-400 mr-3 sm:mr-4 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="text-sm sm:text-base">Proven track record with measurable results</span>
                 </li>
                 <li className="flex items-start">
-                  <svg className="h-5 w-5 sm:h-6 sm:w-6 text-blue-400 mr-3 sm:mr-4 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="h-5 w-5 sm:h-6 sm:w-6 text-navy-400 mr-3 sm:mr-4 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="text-sm sm:text-base">Local SEO specialist for Los Angeles market</span>
                 </li>
                 <li className="flex items-start">
-                  <svg className="h-5 w-5 sm:h-6 sm:w-6 text-blue-400 mr-3 sm:mr-4 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="h-5 w-5 sm:h-6 sm:w-6 text-navy-400 mr-3 sm:mr-4 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="text-sm sm:text-base">Data-driven strategies that convert</span>
                 </li>
                 <li className="flex items-start">
-                  <svg className="h-5 w-5 sm:h-6 sm:w-6 text-blue-400 mr-3 sm:mr-4 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="h-5 w-5 sm:h-6 sm:w-6 text-navy-400 mr-3 sm:mr-4 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                   </svg>
                   <span className="text-sm sm:text-base">Expert in cutting-edge SEO tools</span>
@@ -259,7 +259,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={state.submitting}
-                className="w-full bg-blue-600 text-white py-4 px-6 rounded-md hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors font-semibold text-base sm:text-lg disabled:opacity-50 disabled:cursor-not-allowed touch-manipulation"
+                className="w-full bg-navy-600 text-white py-4 px-6 rounded-md hover:bg-navy-700 focus:ring-2 focus:ring-navy-500 focus:ring-offset-2 transition-colors font-semibold text-base sm:text-lg disabled:opacity-50 disabled:cursor-not-allowed touch-manipulation"
               >
                 {state.submitting ? (
                   <span className="flex items-center justify-center">
@@ -281,7 +281,7 @@ const Contact = () => {
                 <a 
                   href="tel:3235221424" 
                   onClick={() => gtag.trackPhoneCall()}
-                  className="text-blue-600 font-semibold hover:text-blue-700 touch-manipulation"
+                  className="text-navy-600 font-semibold hover:text-navy-700 touch-manipulation"
                 >
                   (323) 522-1424
                 </a>
