@@ -1,7 +1,14 @@
 {
+  "/_not-found": "app/_not-found.js",
+  "/blog/page": "app/blog/page.js",
+  "/page": "app/page.js",
+  "/portfolio/page": "app/portfolio/page.js",
   "/services/electrician-marketing/page": "app/services/electrician-marketing/page.js",
   "/services/cleaning-companies-marketing/page": "app/services/cleaning-companies-marketing/page.js",
-  "/contact/page": "app/contact/page.js",
   "/services/construction-marketing/page": "app/services/construction-marketing/page.js",
-  "/page": "app/page.js"
+  "/services/contractor-marketing/page": "app/services/contractor-marketing/page.js",
+  "/services/plumber-marketing/page": "app/services/plumber-marketing/page.js",
+  "/about/page": "app/about/page.js",
+  "/services/hvac-marketing/page": "app/services/hvac-marketing/page.js",
+  "/contact/page": "app/contact/page.js"
 }

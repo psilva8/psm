@@ -89,18 +89,18 @@ export default function About() {
       
       {/* Hero Section */}
       <section 
-        className="pt-20 sm:pt-24 pb-12 sm:pb-16 bg-cover bg-center bg-no-repeat relative min-h-[60vh] sm:min-h-[70vh] flex items-center"
+        className="pt-24 pb-16 bg-cover bg-center bg-no-repeat relative"
         style={{
           backgroundImage: "url('/images/social media marketing.jpg')"
         }}
       >
         <div className="absolute inset-0 bg-black opacity-60"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               About Paul Silva
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-blue-100 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
               Digital Marketing Expert helping home service businesses dominate their local markets through proven strategies and measurable results.
             </p>
           </div>
