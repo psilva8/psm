@@ -7,7 +7,7 @@ import * as gtag from '../lib/gtag';
 const Hero = () => {
   return (
     <section 
-      className="relative min-h-[60vh] bg-cover bg-center bg-no-repeat"
+      className="relative min-h-[70vh] bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: "url('/images/digital marketing strategist.png')"
       }}
@@ -15,8 +15,8 @@ const Hero = () => {
       aria-label="Paul Silva Marketing Hero Section - Digital Marketing for Home Services"
     >
       <div className="absolute inset-0 bg-black opacity-60"></div>
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[60vh]">
-        <div className="flex flex-col justify-center items-start min-h-[60vh] pt-20 pb-8">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[70vh]">
+        <div className="flex flex-col justify-center items-start min-h-[70vh] pt-20 pb-8">
           <header className="mb-6 space-y-1">
             <p className="text-sm sm:text-base md:text-lg text-blue-200 font-semibold">
               EMAIL: <a href="mailto:paul@paulsilvamarketing.com" onClick={() => gtag.trackEmailClick()} className="hover:text-white transition-colors" title="Email Paul Silva Marketing">paul@paulsilvamarketing.com</a>
