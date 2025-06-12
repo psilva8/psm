@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: 'export', // Disabled for development - enable for production build
+  output: 'export', // Static export for production deployment
   trailingSlash: true,
   images: {
     unoptimized: true
