@@ -14,6 +14,82 @@ body {
 
 html {
   scroll-behavior: smooth;
+  /* Mobile optimizations */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 768px) {
+  /* Improve touch targets */
+  button, a, input, textarea, select {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Optimize font rendering on mobile */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  
+  /* Prevent zoom on input focus */
+  input, textarea, select {
+    font-size: 16px;
+  }
+  
+  /* Improve scrolling performance */
+  * {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  /* Remove hover effects on touch devices */
+  .hover\:bg-blue-700:hover {
+    background-color: rgb(37 99 235);
+  }
+  
+  /* Improve button feedback */
+  button:active, a:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .bg-blue-600 {
+    background-color: #000080;
+  }
+  
+  .text-gray-600 {
+    color: #000000;
+  }
+}
+
+/* Dark mode optimizations */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 18, 18, 18;
+  }
 }
 
 @layer components {
@@ -23,5 +99,39 @@ html {
   
   .btn-secondary {
     @apply border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-md hover:bg-blue-600 hover:text-white transition-colors;
+  }
+  
+  /* Mobile-optimized components */
+  .mobile-optimized {
+    @apply touch-manipulation;
+  }
+  
+  .mobile-optimized img {
+    @apply max-w-full h-auto;
+  }
+  
+  .mobile-optimized .slow-connection {
+    @apply opacity-90;
+  }
+  
+  /* Touch-friendly navigation */
+  .mobile-nav {
+    @apply touch-manipulation select-none;
+  }
+  
+  /* Improved form inputs for mobile */
+  .mobile-input {
+    @apply text-base px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500;
+  }
+  
+  /* Loading states */
+  .loading-skeleton {
+    @apply animate-pulse bg-gray-200 rounded;
+  }
+  
+  /* Performance optimizations */
+  .gpu-accelerated {
+    transform: translateZ(0);
+    will-change: transform;
   }
 } 

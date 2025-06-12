@@ -67,6 +67,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Viewport Meta Tag for Mobile Responsiveness */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+        
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-2VNFLK6KFL"></script>
         <script
@@ -80,6 +83,25 @@ export default function RootLayout({
                 page_location: window.location.href,
                 send_page_view: true
               });
+            `,
+          }}
+        />
+        
+        {/* Service Worker Registration for Mobile Performance */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                  navigator.serviceWorker.register('/sw.js')
+                    .then(function(registration) {
+                      console.log('SW registered: ', registration);
+                    })
+                    .catch(function(registrationError) {
+                      console.log('SW registration failed: ', registrationError);
+                    });
+                });
+              }
             `,
           }}
         />
