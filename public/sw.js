@@ -1,19 +1,9 @@
-const CACHE_NAME = 'paul-silva-marketing-v1';
-const STATIC_CACHE = 'static-v1';
-const DYNAMIC_CACHE = 'dynamic-v1';
+const CACHE_NAME = 'paul-silva-marketing-v2';
+const STATIC_CACHE = 'static-v2';
+const DYNAMIC_CACHE = 'dynamic-v2';
 
-// Assets to cache immediately
+// Assets to cache immediately (removed HTML pages for development)
 const STATIC_ASSETS = [
-  '/',
-  '/about',
-  '/contact',
-  '/portfolio',
-  '/services/hvac-marketing',
-  '/services/plumber-marketing',
-  '/services/contractor-marketing',
-  '/services/electrician-marketing',
-  '/services/construction-marketing',
-  '/services/cleaning-companies-marketing',
   '/images/favicon-32x32.png',
   '/images/favicon-16x16.png',
   '/images/apple-touch-icon.png',
@@ -40,6 +30,7 @@ self.addEventListener('activate', (event) => {
       .then((cacheNames) => {
         return Promise.all(
           cacheNames.map((cacheName) => {
+            // Delete ALL old caches to force refresh
             if (cacheName !== STATIC_CACHE && cacheName !== DYNAMIC_CACHE) {
               return caches.delete(cacheName);
             }
@@ -52,7 +43,7 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// Fetch event - serve from cache, fallback to network
+// Fetch event - NETWORK FIRST for HTML pages
 self.addEventListener('fetch', (event) => {
   const { request } = event;
   const url = new URL(request.url);
@@ -67,40 +58,23 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Handle navigation requests
+  // Handle navigation requests with NETWORK-FIRST strategy (no caching for development)
   if (request.mode === 'navigate') {
     event.respondWith(
-      caches.match(request)
-        .then((cachedResponse) => {
-          if (cachedResponse) {
-            return cachedResponse;
-          }
-          
-          return fetch(request)
-            .then((response) => {
-              // Don't cache error responses
-              if (!response || response.status !== 200 || response.type !== 'basic') {
-                return response;
-              }
-
-              const responseToCache = response.clone();
-              caches.open(DYNAMIC_CACHE)
-                .then((cache) => {
-                  cache.put(request, responseToCache);
-                });
-
-              return response;
-            })
-            .catch(() => {
-              // Return offline page if available
-              return caches.match('/');
-            });
+      fetch(request)
+        .then((response) => {
+          // Always return fresh response for HTML pages
+          return response;
+        })
+        .catch(() => {
+          // Only fallback to cache if network fails
+          return caches.match(request);
         })
     );
     return;
   }
 
-  // Handle static assets
+  // Handle static assets (favicons, etc.)
   if (STATIC_ASSETS.includes(url.pathname)) {
     event.respondWith(
       caches.match(request)
@@ -111,29 +85,29 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Handle images with cache-first strategy
+  // Handle images with network-first strategy (reduced caching)
   if (request.destination === 'image') {
     event.respondWith(
-      caches.match(request)
-        .then((cachedResponse) => {
-          if (cachedResponse) {
-            return cachedResponse;
-          }
+      fetch(request)
+        .then((response) => {
+          return response; // Don't cache images during development
+        })
+        .catch(() => {
+          return caches.match(request);
+        })
+    );
+    return;
+  }
 
-          return fetch(request)
-            .then((response) => {
-              if (!response || response.status !== 200) {
-                return response;
-              }
-
-              const responseToCache = response.clone();
-              caches.open(DYNAMIC_CACHE)
-                .then((cache) => {
-                  cache.put(request, responseToCache);
-                });
-
-              return response;
-            });
+  // Handle CSS/JS with network-first strategy (no caching during development)
+  if (request.destination === 'style' || request.destination === 'script') {
+    event.respondWith(
+      fetch(request)
+        .then((response) => {
+          return response; // Always return fresh CSS/JS
+        })
+        .catch(() => {
+          return caches.match(request);
         })
     );
     return;
@@ -143,17 +117,7 @@ self.addEventListener('fetch', (event) => {
   event.respondWith(
     fetch(request)
       .then((response) => {
-        if (!response || response.status !== 200 || response.type !== 'basic') {
-          return response;
-        }
-
-        const responseToCache = response.clone();
-        caches.open(DYNAMIC_CACHE)
-          .then((cache) => {
-            cache.put(request, responseToCache);
-          });
-
-        return response;
+        return response; // Don't cache other resources during development
       })
       .catch(() => {
         return caches.match(request);
