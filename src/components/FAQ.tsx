@@ -26,10 +26,7 @@ const FAQ = () => {
       question: "What digital marketing services does Paul Silva offer?",
       answer: "I provide comprehensive digital marketing including SEO (search engine optimization), Google Ads management, social media marketing, website optimization, content marketing, email marketing, and analytics tracking. All services are specifically designed for home service businesses."
     },
-    {
-      question: "How much does Paul Silva Marketing cost?",
-      answer: "My pricing varies based on your specific needs and goals. I offer customized marketing packages for different business sizes and budgets. Contact me for a free consultation and custom quote based on your home service business requirements."
-    },
+
     {
       question: "Do you offer local SEO services in Los Angeles?",
       answer: "Yes, local SEO is one of my specialties. I help home service businesses dominate local search results in Los Angeles, optimize Google My Business profiles, build local citations, and improve visibility for 'near me' searches."
