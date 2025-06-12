@@ -161,6 +161,7 @@ export default function RootLayout({
               "openingHours": "Mo-Fr 09:00-17:00",
               "sameAs": [
                 "https://www.facebook.com/profile.php?id=61556683949079",
+                "https://www.linkedin.com/in/paulsilvaseo/",
                 "https://www.youtube.com/channel/UCOtINTtA4z1V2Om6XbE-3-Q",
                 "https://x.com/p_s_marketing_",
                 "https://www.instagram.com/paulsilvamarket"
@@ -206,6 +207,7 @@ export default function RootLayout({
               ],
               "sameAs": [
                 "https://www.facebook.com/profile.php?id=61556683949079",
+                "https://www.linkedin.com/in/paulsilvaseo/",
                 "https://www.youtube.com/channel/UCOtINTtA4z1V2Om6XbE-3-Q",
                 "https://x.com/p_s_marketing_",
                 "https://www.instagram.com/paulsilvamarket"
@@ -349,6 +351,7 @@ export default function RootLayout({
               ],
               "sameAs": [
                 "https://www.facebook.com/profile.php?id=61556683949079",
+                "https://www.linkedin.com/in/paulsilvaseo/",
                 "https://www.youtube.com/channel/UCOtINTtA4z1V2Om6XbE-3-Q",
                 "https://x.com/p_s_marketing_",
                 "https://www.instagram.com/paulsilvamarket"
