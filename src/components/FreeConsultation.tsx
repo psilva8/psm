@@ -57,7 +57,7 @@ const FreeConsultation = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-br from-blue-600 to-blue-800">
+    <section className="py-16 bg-gradient-to-br from-navy-600 to-navy-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
