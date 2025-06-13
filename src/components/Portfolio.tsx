@@ -13,7 +13,7 @@ const Portfolio = () => {
         <div className="bg-white rounded-lg shadow-lg p-8 mb-12">
           <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Improving you Google maps ranking increases traffic and quote calls to your business since customers tend to choose the first listing</h3>
           
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-3 gap-8">
             <div className="bg-red-50 p-6 rounded-lg">
               <h4 className="text-xl font-bold text-red-800 mb-4">Before</h4>
               <p className="text-gray-700 mb-12">
@@ -32,6 +32,14 @@ const Portfolio = () => {
                   <div className="text-sm text-gray-600">Average Ranking</div>
                   <div className="text-sm text-gray-500">08/12/2024</div>
                 </div>
+              </div>
+            </div>
+
+            <div className="hidden lg:flex items-center justify-center">
+              <div className="bg-navy-100 p-4 rounded-full">
+                <svg className="h-8 w-8 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
               </div>
             </div>
 
