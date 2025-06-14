@@ -97,15 +97,23 @@ const Navigation = () => {
               onMouseEnter={() => !isMobile && setIsServicesOpen(true)}
               onMouseLeave={() => !isMobile && setIsServicesOpen(false)}
             >
-              <button 
-                className="text-gray-600 hover:text-navy-600 transition-colors flex items-center py-2 touch-manipulation"
-                onClick={() => isMobile && handleServicesToggle()}
-              >
-                Services
-                <svg className="ml-1 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
+              <div className="flex items-center">
+                <Link
+                  href="/services"
+                  className="text-gray-600 hover:text-navy-600 transition-colors py-2 touch-manipulation"
+                  onClick={closeMobileMenu}
+                >
+                  Services
+                </Link>
+                <button 
+                  className="text-gray-600 hover:text-navy-600 transition-colors flex items-center py-2 touch-manipulation ml-1"
+                  onClick={() => isMobile && handleServicesToggle()}
+                >
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+              </div>
               
               {isServicesOpen && (
                 <div className="absolute top-full left-0 pt-1 w-64 gpu-accelerated">
@@ -182,21 +190,29 @@ const Navigation = () => {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t max-h-screen overflow-y-auto">
               {/* Mobile Services Menu */}
               <div>
-                <button
-                  onClick={handleServicesToggle}
-                  className="flex items-center justify-between w-full px-3 py-3 text-gray-600 hover:text-navy-600 transition-colors touch-manipulation"
-                  aria-expanded={isServicesOpen}
-                >
-                  Services
-                  <svg 
-                    className={`h-4 w-4 transform transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} 
-                    fill="none" 
-                    viewBox="0 0 24 24" 
-                    stroke="currentColor"
+                <div className="flex items-center justify-between w-full px-3 py-3">
+                  <Link
+                    href="/services"
+                    className="text-gray-600 hover:text-navy-600 transition-colors touch-manipulation"
+                    onClick={closeMobileMenu}
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
+                    Services
+                  </Link>
+                  <button
+                    onClick={handleServicesToggle}
+                    className="text-gray-600 hover:text-navy-600 transition-colors touch-manipulation"
+                    aria-expanded={isServicesOpen}
+                  >
+                    <svg 
+                      className={`h-4 w-4 transform transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} 
+                      fill="none" 
+                      viewBox="0 0 24 24" 
+                      stroke="currentColor"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                </div>
                 
                 {isServicesOpen && (
                   <div className="pl-6 space-y-1">
