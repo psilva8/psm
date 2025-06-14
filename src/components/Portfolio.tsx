@@ -15,7 +15,7 @@ const Portfolio = () => {
           
           <div className="grid lg:grid-cols-2 gap-8">
             <div className="bg-red-50 p-6 rounded-lg">
-              <h4 className="text-xl font-bold text-red-800 mb-4">Before</h4>
+              <h4 className="text-2xl font-bold text-red-800 mb-4 text-center uppercase">Before</h4>
               <p className="text-gray-700 mb-12">
                 Using SEMRush to show Local Map Tracking. We can see how in <strong>08/12/2024</strong> this site was with an average ranking for the key phrase <em>"pressure washing near me"</em> at <strong className="text-red-600">14.09</strong> in the county of Los Angeles.
               </p>
@@ -36,7 +36,7 @@ const Portfolio = () => {
             </div>
 
             <div className="bg-green-50 p-6 rounded-lg">
-              <h4 className="text-xl font-bold text-green-800 mb-4">After</h4>
+              <h4 className="text-2xl font-bold text-green-800 mb-4 text-center uppercase">After</h4>
               <p className="text-gray-700 mb-12">
                 With Local SEO, On Page SEO and Link Building applied. Now by <strong>12/01/2024</strong> the ranking for the same phrase is now <strong className="text-green-600">5.92</strong> in Los Angeles. Technical SEO was applied also to improve site loading speed. Resulting in this site ranking <strong className="text-green-600">1st</strong> in many cities of Los Angeles.
               </p>
