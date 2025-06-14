@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from '@/components/Navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'HVAC Marketing Services | Paul Silva Marketing',
     description: 'Expert HVAC marketing services in Los Angeles. Specialized SEO, Google Ads, and lead generation for HVAC contractors. Proven results with 300%+ lead increases.',
-    url: 'https://paulsilvamarketing.com/hvac-marketing',
+    url: 'https://paulsilvamarketing.com/services/hvac-marketing',
     images: [
       {
         url: '/images/HVAC Marketing.jpg',
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: '/hvac-marketing',
+    canonical: '/services/hvac-marketing',
   },
 };
 
@@ -68,14 +69,18 @@ export default function HVACMarketing() {
       />
       
       {/* Hero Section */}
-      <section 
-        className="pt-24 pb-16 bg-cover bg-center bg-no-repeat relative"
-        style={{
-          backgroundImage: "url('/images/HVAC Marketing.jpg')"
-        }}
-      >
-        <div className="absolute inset-0 bg-black opacity-60"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <section className="pt-24 pb-16 relative">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/HVAC Marketing.jpg"
+            alt="HVAC Marketing Services"
+            fill
+            style={{ objectFit: 'cover' }}
+            priority
+          />
+          <div className="absolute inset-0 bg-black opacity-60"></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               HVAC Marketing Services
