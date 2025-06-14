@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Navigation from '@/components/Navigation';
 
 export const metadata = {
   title: 'Digital Marketing Services | Paul Silva Marketing',
@@ -54,6 +55,7 @@ const services = [
 export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-white">
+      <Navigation />
       {/* Hero Section */}
       <div className="relative h-[500px]">
         <Image
