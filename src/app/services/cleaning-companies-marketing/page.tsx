@@ -12,7 +12,7 @@ export default function CleaningCompaniesMarketing() {
       <section className="pt-24 pb-16 relative">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/marketing for home services.jpg"
+            src="/images/pressure washing marketing.jpg"
             alt="Cleaning Companies Marketing Services"
             fill
             style={{ objectFit: 'cover' }}
