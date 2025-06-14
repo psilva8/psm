@@ -19,11 +19,11 @@ const Portfolio = () => {
               <p className="text-gray-700 mb-12">
                 Using SEMRush to show Local Map Tracking. We can see how in <strong>08/12/2024</strong> this site was with an average ranking for the key phrase <em>"pressure washing near me"</em> at <strong className="text-red-600">14.09</strong> in the county of Los Angeles.
               </p>
-              <div className="mb-4 mt-4">
+              <div className="mb-4 mt-4 h-[300px]">
                 <img 
                   src="/images/google ranking before.png" 
                   alt="Google ranking before SEO optimization"
-                  className="w-full rounded-md shadow-sm"
+                  className="w-full h-full object-contain rounded-md shadow-sm"
                 />
               </div>
               <div className="bg-white p-3 rounded border-2 border-red-200">
@@ -40,11 +40,11 @@ const Portfolio = () => {
               <p className="text-gray-700 mb-12">
                 With Local SEO, On Page SEO and Link Building applied. Now by <strong>12/01/2024</strong> the ranking for the same phrase is now <strong className="text-green-600">5.92</strong> in Los Angeles. Technical SEO was applied also to improve site loading speed. Resulting in this site ranking <strong className="text-green-600">1st</strong> in many cities of Los Angeles.
               </p>
-              <div className="mb-4 mt-4">
+              <div className="mb-4 mt-4 h-[300px]">
                 <img 
                   src="/images/google ranking after.png" 
                   alt="Google ranking after SEO optimization"
-                  className="w-full rounded-md shadow-sm"
+                  className="w-full h-full object-contain rounded-md shadow-sm"
                 />
               </div>
               <div className="bg-white p-3 rounded border-2 border-green-200">
