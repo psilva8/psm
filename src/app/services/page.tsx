@@ -59,7 +59,7 @@ export default function ServicesPage() {
       {/* Hero Section */}
       <div className="relative h-[500px]">
         <Image
-          src="/images/services hero.jpg"
+          src="/images/digital marketing services compressed.jpg"
           alt="Digital Marketing Services"
           fill
           style={{ objectFit: 'cover' }}
