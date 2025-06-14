@@ -34,12 +34,12 @@ export default function RoofingMarketing() {
       {/* Hero Section */}
       <section className="pt-24 pb-16 relative">
         <div className="absolute inset-0 z-0">
-          <div className="relative w-full h-[600px]">
+          <div className="relative w-full h-[500px]">
             <Image
               src="/images/roofing marketing compressed.jpg"
               alt="Roofing Marketing Services"
               fill
-              style={{ objectFit: 'contain' }}
+              style={{ objectFit: 'cover' }}
               priority
             />
             <div className="absolute inset-0 bg-black/50" />
