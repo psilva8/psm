@@ -34,14 +34,16 @@ export default function RoofingMarketing() {
       {/* Hero Section */}
       <section className="pt-24 pb-16 relative">
         <div className="absolute inset-0 z-0">
-          <Image
-            src="/images/roofing marketing.jpg"
-            alt="Roofing Marketing Services"
-            fill
-            style={{ objectFit: 'cover' }}
-            priority
-          />
-          <div className="absolute inset-0 bg-black opacity-60"></div>
+          <div className="relative w-full h-[500px]">
+            <Image
+              src="/images/roofing marketing compressed.jpg"
+              alt="Roofing Marketing Services"
+              fill
+              style={{ objectFit: 'cover' }}
+              priority
+            />
+            <div className="absolute inset-0 bg-black/50" />
+          </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
