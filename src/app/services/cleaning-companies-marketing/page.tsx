@@ -2,6 +2,29 @@ import React from 'react';
 import Navigation from '@/components/Navigation';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Cleaning Companies Marketing Services | Paul Silva Marketing',
+  description: 'Expert digital marketing services for cleaning companies. Specialized SEO, Google Ads, and lead generation for residential and commercial cleaning businesses. Get more recurring clients.',
+  keywords: 'cleaning company marketing, cleaning services SEO, cleaning Google Ads, cleaning lead generation, cleaning digital marketing, Paul Silva',
+  openGraph: {
+    title: 'Cleaning Companies Marketing Services | Paul Silva Marketing',
+    description: 'Expert digital marketing services for cleaning companies. Specialized SEO, Google Ads, and lead generation for residential and commercial cleaning businesses.',
+    url: 'https://paulsilvamarketing.com/services/cleaning-companies-marketing',
+    images: [
+      {
+        url: '/images/pressure washing marketing.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Cleaning Companies Marketing Services - Paul Silva Marketing',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://paulsilvamarketing.com/services/cleaning-companies-marketing',
+  },
+};
 
 export default function CleaningCompaniesMarketing() {
   return (

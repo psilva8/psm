@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: '/services/hvac-marketing',
+    canonical: 'https://paulsilvamarketing.com/services/hvac-marketing',
   },
 };
 
