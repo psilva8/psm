@@ -2,6 +2,29 @@ import React from 'react';
 import Navigation from '@/components/Navigation';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contractor Marketing Services | Paul Silva Marketing',
+  description: 'Expert digital marketing services for general contractors. Specialized SEO, Google Ads, and lead generation for residential and commercial construction projects. Get more high-value projects.',
+  keywords: 'contractor marketing, construction SEO, contractor Google Ads, contractor lead generation, construction digital marketing, Paul Silva',
+  openGraph: {
+    title: 'Contractor Marketing Services | Paul Silva Marketing',
+    description: 'Expert digital marketing services for general contractors. Specialized SEO, Google Ads, and lead generation for residential and commercial construction projects.',
+    url: 'https://paulsilvamarketing.com/services/contractor-marketing',
+    images: [
+      {
+        url: '/images/contractor marketing.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Contractor Marketing Services - Paul Silva Marketing',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://paulsilvamarketing.com/services/contractor-marketing',
+  },
+};
 
 export default function ContractorMarketing() {
   return (

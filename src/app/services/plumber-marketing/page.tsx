@@ -2,6 +2,29 @@ import React from 'react';
 import Navigation from '@/components/Navigation';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Plumber Marketing Services | Paul Silva Marketing',
+  description: 'Expert digital marketing services for plumbers. Specialized SEO, Google Ads, and lead generation for emergency plumbing services and maintenance. Get more service calls.',
+  keywords: 'plumber marketing, plumbing SEO, plumber Google Ads, plumber lead generation, plumbing digital marketing, Paul Silva',
+  openGraph: {
+    title: 'Plumber Marketing Services | Paul Silva Marketing',
+    description: 'Expert digital marketing services for plumbers. Specialized SEO, Google Ads, and lead generation for emergency plumbing services and maintenance.',
+    url: 'https://paulsilvamarketing.com/services/plumber-marketing',
+    images: [
+      {
+        url: '/images/Plumber Marketing.JPG',
+        width: 1200,
+        height: 630,
+        alt: 'Plumber Marketing Services - Paul Silva Marketing',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://paulsilvamarketing.com/services/plumber-marketing',
+  },
+};
 
 export default function PlumberMarketing() {
   return (

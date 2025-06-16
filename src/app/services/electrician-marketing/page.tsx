@@ -2,6 +2,29 @@ import React from 'react';
 import Navigation from '@/components/Navigation';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Electrician Marketing Services | Paul Silva Marketing',
+  description: 'Expert digital marketing services for electricians. Specialized SEO, Google Ads, and lead generation for emergency electrical services and upgrades. Get more service calls.',
+  keywords: 'electrician marketing, electrical SEO, electrician Google Ads, electrician lead generation, electrical digital marketing, Paul Silva',
+  openGraph: {
+    title: 'Electrician Marketing Services | Paul Silva Marketing',
+    description: 'Expert digital marketing services for electricians. Specialized SEO, Google Ads, and lead generation for emergency electrical services and upgrades.',
+    url: 'https://paulsilvamarketing.com/services/electrician-marketing',
+    images: [
+      {
+        url: '/images/electrician marketing.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Electrician Marketing Services - Paul Silva Marketing',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://paulsilvamarketing.com/services/electrician-marketing',
+  },
+};
 
 export default function ElectricianMarketing() {
   return (
