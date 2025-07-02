@@ -195,36 +195,47 @@ export default function HVACMarketing() {
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8">Frequently Asked Questions</h2>
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">HVAC Social Media</h3>
-                <p className="text-gray-700 mb-4">Build Local Trust With Social Media Marketing.</p>
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">How much does HVAC marketing cost?</h3>
+                <p className="text-gray-700 mb-4">Our HVAC marketing packages start at $2,500/month and include comprehensive digital marketing services. Each package is customized based on your market size, competition level, and growth goals.</p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">How long until I see results?</h3>
+                <p className="text-gray-700 mb-4">Most HVAC companies see significant improvements within 60-90 days. Our clients typically experience:</p>
                 <div className="flex items-center gap-4 text-sm text-gray-600">
-                  <span>9,207 followers</span>
+                  <span>300%+ increase in leads</span>
+                  <span>•</span>
+                  <span>85% improvement in rankings</span>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">What marketing channels do you use?</h3>
+                <p className="text-gray-700 mb-4">We utilize multiple channels to maximize your HVAC company's online presence:</p>
+                <div className="flex items-center gap-4 text-sm text-gray-600">
+                  <span>Google Ads</span>
+                  <span>•</span>
+                  <span>Local SEO</span>
+                  <span>•</span>
+                  <span>Social Media</span>
+                </div>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">What makes your HVAC marketing different?</h3>
+                <p className="text-gray-700 mb-4">We specialize exclusively in HVAC and home services marketing. Our proven strategies have generated:</p>
+                <div className="flex items-center gap-4 text-sm text-gray-600">
+                  <span>9,207 social followers</span>
                   <span>•</span>
                   <span>2,187 engagements</span>
-                </div>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">Pay-Per-Lead for HVAC</h3>
-                <div className="flex items-center gap-4 text-sm text-gray-600">
-                  <span>2,077 leads generated</span>
                   <span>•</span>
-                  <span>32 active campaigns</span>
+                  <span>2,077 leads</span>
                 </div>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">Get Exclusive HVAC Leads</h3>
-                <div className="flex items-center gap-4 text-sm text-gray-600">
-                  <span>2,077 exclusive leads</span>
-                  <span>•</span>
-                  <span>32 service areas</span>
-                </div>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">HVAC Marketing Software</h3>
-                <p className="text-gray-700">Comprehensive marketing automation tools designed specifically for HVAC businesses.</p>
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">Do you offer HVAC marketing software?</h3>
+                <p className="text-gray-700">Yes, we provide comprehensive marketing automation tools designed specifically for HVAC businesses, including lead tracking, appointment scheduling, and customer relationship management features.</p>
               </div>
             </div>
           </div>
