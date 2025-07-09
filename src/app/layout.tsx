@@ -6,7 +6,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Paul Silva Marketing | Marketing Consultant",
+  title: "Paul Silva Marketing - Los Angeles SEO",
   description: "Paul Silva Marketing specializes in digital marketing for home service businesses in Los Angeles. Expert in SEO, Google Ads, social media marketing, and lead generation for HVAC, plumbing, electrical, construction, and cleaning companies. Proven results with 300%+ lead increases.",
   keywords: "home service marketing, HVAC marketing, plumber marketing, contractor marketing, electrician marketing, construction marketing, cleaning company marketing, Los Angeles digital marketing, local SEO, Google Ads, PPC, lead generation, Paul Silva",
   authors: [{ name: "Paul Silva" }],
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: "Paul Silva Marketing | Marketing Consultant",
+    title: "Paul Silva Marketing - Los Angeles SEO",
     description: "Expert digital marketing consultant for home service businesses in Los Angeles. Specializing in SEO, Google Ads, and lead generation for HVAC, plumbing, electrical, construction companies.",
     url: 'https://www.paulsilvamarketing.com',
     siteName: 'Paul Silva Marketing',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Paul Silva Marketing | Marketing Consultant",
+    title: "Paul Silva Marketing - Los Angeles SEO",
     description: "Expert digital marketing consultant for home service businesses in Los Angeles. Proven results with 300%+ lead increases.",
     images: ['/images/digital marketing strategist.png'],
   },
