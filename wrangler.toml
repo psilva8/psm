@@ -1,6 +1,5 @@
 name = "psm"
 compatibility_date = "2025-06-10"
 
-[build]
-command = "npm run build"
-pages_build_output_dir = ".next" 
+[assets]
+directory = ".next" 
